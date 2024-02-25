@@ -31,5 +31,6 @@
 
 evaluate <- function(func, dat){
   # Write your code here!
+  func(dat)
   # Remember: the last expression evaluated will be returned! 
 }
