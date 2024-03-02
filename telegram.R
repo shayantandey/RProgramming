@@ -17,9 +17,9 @@
 # arguments after an ellipses must have default values. Take a look at the
 # simon_says function below:
 #
-# simon_says <- function(...){
-#   paste("Simon says:", ...)
-# }
+ simon_says <- function(...){
+   paste("Simon says:", ...)
+ }
 #
 # The simon_says function works just like the paste function, except the
 # begining of every string is prepended by the string "Simon says:"
@@ -30,6 +30,6 @@
 # For example the expression `telegram("Good", "morning")` should evaluate to:
 # "START Good morning STOP"
 
-telegram <- function(...){
-  
+telegram <- function(..., arg1, arg2){
+  paste("START", ... , "STOP", collapse = NULL)
 }
